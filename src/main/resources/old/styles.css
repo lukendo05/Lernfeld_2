@@ -1,0 +1,31 @@
+.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#number {
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.select-button {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}

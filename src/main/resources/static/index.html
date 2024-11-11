@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.5" name="viewport">
+    <title>ScooTeq</title>
+    <link href="/styles.css" rel="stylesheet">
+    <script src="/scripts.js"></script>
+</head>
+<body>
+    <h1>Was kostet deine gefahrene Strecke?</h1>
+
+    <div>
+        <label for="username">Nutzer:</label>
+        <input id="username" placeholder="Bitte Namen eingeben" type="text" onkeydown="searchForEnterUsername()">
+        <button id="loginButton" onclick="login()">Anmelden</button>
+    </div>
+
+    <div id="calc-section" style="display: none;">
+        <label for="number">Kilometer/Minuten:</label>
+        <input id="number" placeholder="Nummer eingeben!" type="text" onkeydown="searchForEnterNums()">
+
+        <div>
+            <button class="selector-button selected" id="kmButton" onclick="setFactor(0.35, 'kmButton')">Kilometer</button>
+            <button class="selector-button" id="minButton" onclick="setFactor(0.25, 'minButton')">Minuten</button>
+        </div>
+
+        <button id="multiplyButton" onclick="multiply()">Berechnen</button>
+        <p id="result"></p>
+    </div>
+
+    <div>
+        <ul id="calculation-list"></ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin 10px;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+}
+
+#username {
+    font-size: 20px;
+    padding: 10px 10px;
+}
+
+#number {
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 20px;
+}
+
+.selector-button {
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+#result {
+    margin: 20px;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+#calculation-list {
+    list-style: none;
+}

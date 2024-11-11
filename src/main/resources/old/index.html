@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mietraten Ermittler</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1>Mietraten Ermittler</h1>
+
+<label for="number">Bitte geben Sie ihre Distanz/Dauer ein:</label><br>
+<input type="text" id="number" placeholder="Nummer eingeben">
+
+<div>
+    <button id="kmButton" class="select-button selected" onclick="setFactor(0.35, 'kmButton')">Kilometer</button>
+    <button id="minButton" class="select-button" onclick="setFactor(0.25, 'minButton')">Minuten</button>
+</div>
+
+<button onclick="multiply()">Ermitteln</button>
+<p id="result"></p>
+
+<script src="/scripts.js"></script>
+</body>
+</html>
